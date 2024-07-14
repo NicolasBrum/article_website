@@ -1,0 +1,98 @@
+/* About me */
+#about-me{
+    width: 100%;
+    margin-top: 100px;
+    padding: 30px;
+}
+
+#about-me__container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 100px;
+    align-items: center;
+}
+
+#about-me__container__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    width: 40%;
+}
+
+#about-me__container img{
+    width: 300px;
+    height: 480px;
+    border: 1px solid #501bc2;
+}
+
+#about-me__container p{
+    color: white;
+    width: 100%;
+}
+
+.about-me__text{
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    line-height: 3rem;
+}
+
+#about-me__title{
+    font-size: 3rem;
+}
+
+.purple__title{
+    color: #501bc2;
+}
+
+/* Technologies */
+#technologies{
+    width: 100%;
+    margin-top: 20px;
+}
+
+#technologies__container{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.technologies__title{
+    font-size: 4rem;
+    color: white;
+}
+
+#cards__container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card{
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(64, 11, 179, 0.375);
+    margin: 20px;
+    padding: 10px;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.body__card{
+    padding: 20px;
+}
+
+.card__title{
+    font-size: 2rem;
+    color: white;
+}

@@ -3,36 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <!-- FONTS -->
+    <link href="/css/Base/reset.css" rel="stylesheet">
+    <link href="/css/Module/navbar.css" rel="stylesheet">
+    <link href="/css/Layout/aboutMe.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/standard.css">
-    <link rel="stylesheet" media="screen and (max-width: 575px)" href="css/tiny.css">
-    <link rel="stylesheet" media="screen and (min-width: 576px) and (max-width: 767px)" href="css/small.css">
-    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)" href="css/average.css">
-    <link rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)" href="css/big.css">
-    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="css/very_large.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <title>Meu portifólio</title>
 </head>
 <body>
-    <!-- TOP -->
-    <header>
-        <a id="link-start" href="index.html">Inicio</a>
-        <nav>
-            <a href="article.html">Artigos</a>
-            <a href="contact.html">Contato</a>
+    <header class="navbar">
+        <nav class="navbar__container">
+            <a class="navbar__link" href="#">Sobre</a>
+            <a class="navbar__link" href="#">Artigos</a>
+            <a class="navbar__link" href="#">Contato</a>
         </nav>
     </header>
-    <hr>
-    <div id="img-div">
-        <img src="images/eu.jpeg">
-        <p>Olá, meu nome é Nicolas, criei este site para disponibilizar alguns artigos de minha autoria para que possa</p>
-        <p>ajudar em seus estudos e claro, para testar minhas habilidades com HTML e CSS. Para ter acesso aos</p>
-        <p>artigos, vá na aba<strong> 'Artigos'</strong> e clique no artigo desejado, o download será feito automaticamente.</p>
-    </div>
+    <main class="main__content">
+        <section id="about-me">
+            <div id="about-me__container">
+                <img src="/images/eu.jpeg" alt="foto nicolas">
+                <div id="about-me__container__text">
+                    <p class="about-me__text" id="about-me__title"><span class="purple__title">Olá, me chamo Nicolas.</span></p>
+                    <p class="about-me__text">Tenho 23 anos, sou estudante de engenharia de software na Uniasselvi. 
+                        Atualmente moro na zona sul de Porto Alegre - RS.</p>
+                    <p class="about-me__text"><span class="purple__title">Meus hobbies são:</span> Jogar no computador, ir em restaurantes e sair com os amigos. 
+                        Pretendo atuar na área de desenvolvimento web como programador Full-stack.</p>
+                    <p class="about-me__text">Mas também tenho um apreço pela área de dados, exclusivamente como administrador de Banco de dados</p>
+                </div>
+            </div>
+        </section>
+        <section id="technologies">
+            <div id="technologies__container">
+                <h2 class="technologies__title">Tecnologias que mais utilizo:</h2>
+                <div id="cards__container">
+                    <div class="card">
+                        <img src="/images/icons8-html-256.png" alt="logo-html">
+                        <div class="body__card">
+                            <h3 class="card__title">HTML</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/images/icons8-css-256.png" alt="logo-html">
+                        <div class="body__card">
+                            <h3 class="card__title">CSS</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/images/icons8-php-256.png" alt="logo-html">
+                        <div class="body__card">
+                            <h3 class="card__title">PHP</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/images/icons8-c-256.png" alt="logo-html">
+                        <div class="body__card">
+                            <h3 class="card__title">C#</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/images/icons8-mysql-256.png" alt="logo-html">
+                        <div class="body__card">
+                            <h3 class="card__title">MYSQL</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Nicolas Vieira Lara Brum - 2024</p>
+    </footer>
 </body>
 </html>
