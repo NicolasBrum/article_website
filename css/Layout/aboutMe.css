@@ -18,7 +18,9 @@
 #about-me__container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 #about-me__container__text{
